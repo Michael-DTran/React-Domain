@@ -45,7 +45,7 @@ You should see the index.html, logos, manifest, and robots files
 If you delve deeper into ```demo-app --> build --> static```
 You should see the css, javascript, and media files. All of these files will be uploaded to S3 to host the website.
 
-stg1 10](https://github.com/Michael-DTran/React-Domain/assets/112426094/f5cde2b6-13f0-41c2-a016-52a1d383bd0e)
+![stg1 10](https://github.com/Michael-DTran/React-Domain/assets/112426094/f5cde2b6-13f0-41c2-a016-52a1d383bd0e)
 
 # Stage 2: Create the S3 Bucket
 
