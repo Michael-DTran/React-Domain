@@ -8,7 +8,7 @@ In this project I will be creating a React App and upload those files to a S3 Bu
 
 # Stage 1: Create React App 
 Make a directory folder to store all the React files.
-Open Windows Powerhsell and navigate to your file directory 
+Open Windows Powershell and navigate to your file directory 
 Enter the following commands: 
 Note: *Make sure you have npm installed*
 
