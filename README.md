@@ -34,7 +34,7 @@ press 'y' if prompted.
 
 ![stg1 6](https://github.com/Michael-DTran/React-Domain/assets/112426094/91310a47-46b2-4402-bb5c-ca51b5bad7d2)
 
-All the files will be batched into some static files. Enter in demo-app --> build 
+All the files will be batched into some static files. Enter in ```demo-app --> build``` 
 You should see the index.html, logos, manifest, and robots files
 
 ![stg1 7](https://github.com/Michael-DTran/React-Domain/assets/112426094/3ca60703-baba-4a70-8b49-64ed6c4bf3e4)
@@ -42,7 +42,7 @@ You should see the index.html, logos, manifest, and robots files
 ![stg1 9](https://github.com/Michael-DTran/React-Domain/assets/112426094/4da83375-2ae9-42b7-b6b5-dcdd0c976dbf)
 
 
-If you delve deeper into demo-app --> build --> static
+If you delve deeper into ```demo-app --> build --> static```
 You should see the css, javascript, and media files. All of these files will be uploaded to S3 to host the website.
 
 stg1 10](https://github.com/Michael-DTran/React-Domain/assets/112426094/f5cde2b6-13f0-41c2-a016-52a1d383bd0e)
