@@ -28,8 +28,9 @@ The react app should start up on a seperate window. This is what I will be deplo
 ![stg1 4](https://github.com/Michael-DTran/React-Domain/assets/112426094/b0d2e2ad-cbec-4c66-917f-92a0a3b4e0dd)
 
 Bundle all of the files together so they can be deployed in a production environment.
+
 ```npm run build``` 
-press 'y' if prompted
+press 'y' if prompted.
 
 ![stg1 6](https://github.com/Michael-DTran/React-Domain/assets/112426094/91310a47-46b2-4402-bb5c-ca51b5bad7d2)
 
