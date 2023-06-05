@@ -24,10 +24,10 @@ Once installed enter into the demo-app
 ![stg1 3](https://github.com/Michael-DTran/React-Domain/assets/112426094/8e043e92-7105-4389-9188-97b39a1bb7d7)
 
 The react app should start up on a seperate window. This is what I will be deploying on the S3 website. You can close this window afterwards. 
-Bundle all of the files together so they can be deployed in a production environment
 
 ![stg1 4](https://github.com/Michael-DTran/React-Domain/assets/112426094/b0d2e2ad-cbec-4c66-917f-92a0a3b4e0dd)
 
+Bundle all of the files together so they can be deployed in a production environment.
 ```npm run build``` 
 press 'y' if prompted
 
