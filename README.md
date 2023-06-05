@@ -21,7 +21,6 @@ Once installed enter into the demo-app
 ``` cd demo-app ```
 ``` npm start ```
 
-![stg1 2](https://github.com/Michael-DTran/React-Domain/assets/112426094/654a9dce-dd4c-4b24-b959-9834198bc7a0)
 ![stg1 3](https://github.com/Michael-DTran/React-Domain/assets/112426094/8e043e92-7105-4389-9188-97b39a1bb7d7)
 
 The react app should start up on a seperate window. This will be what will be deploying on the S3 website. You can close this window afterwards. 
