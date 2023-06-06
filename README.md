@@ -116,7 +116,7 @@ Paste in this bucket policy and replace *Bucket-Name* with the name of the corre
 Note: *The bucket-policy* file is attached to this repository. 
 Press on **Save changes** when complete. 
 
-![stg2 21](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/f505b741-1fc8-43a9-9c36-8823ba84edec)
+![stg2 21](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/8227f8b6-768f-4dad-bb3f-592c2d6ff737)
 
 ![stg2 22](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/17fbaad2-bb87-4818-a9c4-81577dd49bfd)
 
@@ -124,6 +124,7 @@ To do a manual check head to the *www* bucket and click on *index.html*
 
 
 ![stg2 23](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/1a35ab78-261f-418b-b43a-bc5cf1db889c)
+
 ![stg2 24](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/ddc429df-0ed1-4594-b3e9-d1a3d6ec5731)
 
 Enter in the *Object URL*
