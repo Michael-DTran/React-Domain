@@ -140,7 +140,7 @@ This test is to show that the bucket is in fact public and that you can access t
 
 Head back to the **www** and press on the ```Properties``` tab. Scroll down until you see ```Static website hosting```. Press on **Edit**.
 
-![stg2 27](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/8d379ef8-a0bc-48e7-b3a5-4e53ae8d1d33)
+![stg2 27](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/b763e01b-aad4-43bf-a66a-00a45b5f3910)
 
 ![stg2 28](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/3a2a2bb8-62b1-483c-9301-d55f3080b80c)
 
