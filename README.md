@@ -253,7 +253,7 @@ Enter in the **non-www** website url.
 
 ![stg4 4](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/f26f97cf-ad98-4d96-8ae8-4c3b9cd1c2f4)
 
-Scroll down to ```DNS validation - recommended``` and select it. Scroll down and press *Request*
+Scroll down to ```DNS validation - recommended``` and select it. Scroll down and press *Request*.
 
 ![stg4 5](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/ef40991f-be29-4a22-ae52-c057be9f309a)
 
