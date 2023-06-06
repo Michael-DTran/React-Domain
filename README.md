@@ -62,7 +62,7 @@ Press on **Create Bucket**.
 ![stg2 2](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/55a1e01e-3e35-4fdf-aad7-0d8dad9268c9)
 ![stg2 3](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/e339f12b-4a85-4fa6-a965-4f78e89e0746)
 
-Next, create the second bucket that corresponds with the website name. Select *US East(N. Virginia) us-east-1* as our **AWS Region**
+Next, create the second bucket that corresponds with the website name. Select ```US East(N. Virginia) us-east-1``` as our **AWS Region**
 Press on **Create Bucket**.
 
 ![stg2 4](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/071597e5-6c29-4c3d-9671-16f15b16b805)
@@ -95,23 +95,23 @@ Head to the *www* bucket and press on **Permissions**.
 
 ![stg2 15](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/e56d64b7-eb3c-450e-8ee5-5320eccbd784)
 
-Head to *Block public access (bucket settings)* and press on **Edit**.
+Head to ```Block public access (bucket settings)``` and press on **Edit**.
 
 ![stg2 16](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/881776fd-5bd0-464b-b884-674edc718513)
 
-Uncheck the *Block all public access* setting and press on **Save Changes**.
+Uncheck the ```Block all public access``` setting and press on **Save Changes**.
 
 ![stg2 17](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/3ffc68ca-5a26-44a8-ba88-4297e52ecfae)
 
-Enter in *confirm* and press on **Confirm** 
+Enter in ```confirm``` and press on **Confirm** 
 
 ![stg2 18](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/4298409c-d05c-4729-876c-f1d1fb1e398c)
 
-Head to *Bucket Policy* and press on **Edit** 
+Head to ```Bucket Policy``` and press on **Edit** 
 
 ![stg2 19](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/7f63b87a-ea58-41dc-b1a3-807601e30f28)
 
-Paste in this bucket policy and replace *Bucket-Name* with the name of the corresponding bucket that has the *www* url. 
+Paste in this bucket policy and replace ```Bucket-Name``` with the name of the corresponding bucket that has the *www* url. 
 
 Note: *The bucket-policy* file is attached to this repository: https://github.com/Michael-DTran/React-Domain-Proj/blob/6dbb0515bb168820d4e9ca365771f4d0a1dcaed0/bucket-policy
 
@@ -122,14 +122,14 @@ Note: *Ignore the API Error*
 
 ![stg2 22](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/4b2697fa-2e82-4576-84d9-831577462870)
 
-To do a manual check head to the *www* bucket and click on *index.html*
+To do a manual check head to the *www* bucket and click on ```index.html```
 
 
 ![stg2 23](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/1a35ab78-261f-418b-b43a-bc5cf1db889c)
 
 ![stg2 24](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/ddc429df-0ed1-4594-b3e9-d1a3d6ec5731)
 
-Enter in the *Object URL*
+Enter in the ```Object URL```
 
 ![stg2 25](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/52b9ce6d-b600-4432-915a-9c52cdcf1f48)
 
@@ -138,14 +138,14 @@ This test is to show that the bucket is in fact public and that you can access t
 
 ![stg2 26](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/96527be6-22b7-4ff0-8b20-429b27721161)
 
-Head back to the *www* and press on the **Properties** tab. Scroll down until you see *Static website hosting*. Press on **Edit**.
+Head back to the *www* and press on the ```Properties``` tab. Scroll down until you see ```Static website hosting```. Press on **Edit**.
 
 ![stg2 27](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/8d379ef8-a0bc-48e7-b3a5-4e53ae8d1d33)
 
 ![stg2 28](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/c5b50871-61e3-49a9-9802-042a1172f783)
 
 
-Change *Static website hosting* to *enable* and *Hosting type* to *Host a static website*. For *Index document* type in the *index.html* file.
+Change ```Static website hosting```to ```enable``` and ```Hosting type``` to ```Host a static website```. For ```Index document``` type in the ```index.html``` file.
 
 ![stg2 29](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/b3e2c992-687b-4544-9bb7-77253f601483)
 
@@ -153,14 +153,14 @@ Press on **Save changes**.
 
 ![stg2 30](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/13b6175e-b2e3-4224-94ae-06778c4117d2)
 
-Head to the *non-www* bucket and press on the **Properties** tab. Scroll down until you see *Static website hosting*. Press on **Edit**.
+Head to the *non-www* bucket and press on the ```Properties``` tab. Scroll down until you see ```Static website hosting```. Press on **Edit**.
 
 ![stg2 31](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/0c2c7b07-462c-4a17-86ad-a6c4e2367a01)
 
 ![stg2 32](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/5afb7fd6-d6e5-452c-890b-7b4803a88493)
 
-Change *Static website hosting* to *enable* and *Hosting type* to *Redirect requests for an object*. Under *Host name* enter in the bucket with *www*. 
-Under *Protocol - Optional* change it to *http* for now. When we set up the CF distribution we will change it to https later on in this project. 
+Change ```Static website hosting```to ```enable``` and ```Hosting type``` to ```Redirect requests for an object```. Under ```Host name``` enter in the bucket with *www*. 
+Under ```Protocol - Optional``` change it to ```http``` for now. When we set up the CF distribution we will change it to https later on in this project. 
 Click on **Save changes**.
 
 ![stg2 33](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/daf638a3-14de-4702-9f6b-7f40a3d092bc)
