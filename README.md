@@ -169,7 +169,7 @@ We will now register the domain.
 
 Head to Route 53: https://us-east-1.console.aws.amazon.com/route53
 
-Press on **Register Domain**
+Press on **Register Domain**.
 
 ![stg3 1](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/6326cf29-9885-4dbf-ba12-a5b66bc3f24a)
 
@@ -177,7 +177,7 @@ Under ```Check availability for a domain``` enter in your desired domain name. P
 
 ![stg3 2](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/2b987d1f-77c6-4a7f-bf42-5202c5d305db)
 
-Follow the prompts for pricing and press **Next**
+Follow the prompts for pricing and press **Next**.
 
 ![stg3 3](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/a4ebcad2-bd8f-4d65-829c-72fb5b349b7f)
 
@@ -187,7 +187,7 @@ Enter in your payment information and contact information. Agree to the ```Terms
 
 Note: *The domain may take from a few minutes to a few days to register. Message AWS if you have issues getting your domain registered in a reasonable amount of time*
 Once your domain is registered the ```status``` should read ```Domain registration successful```.
-Click on **Hosted Zone*
+Click on **Hosted Zone*.
 
 ![stg3 5](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/3d591898-1d7c-474e-9165-a8e74cd5d2ca)
 
@@ -204,7 +204,7 @@ Under ```Choose routing policy``` from the selection wizard, select ```Simple ro
 
 ![stg3 8](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/2c3bfb98-925d-4aae-8988-f55407bfd365)
 
-Press on **Define simple record**
+Press on **Define simple record**.
 
 ![stg3 9](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/800040af-fcc7-4417-bea6-d83da91b95a0)
 
@@ -222,7 +222,7 @@ All the steps are the same as before except leave the ```Record name``` blank.
 
 ![stg3 10x](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/5c255add-7051-4bfb-8af6-ec565945811e)
 
-Once both records are created press on **Create records**
+Once both records are created press on **Create records**.
 
 ![stg3 12](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/7440ee5f-7db6-417e-9269-9d5668819901)
 
