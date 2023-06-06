@@ -280,7 +280,7 @@ We will make our **www** Cloudfront distribution first. Click on **Create a Clou
 
 When we click on ```Origin domain``` the **www** domain under the dropdown menu is actually the wrong one. The correct one is located in our S3 bucket. 
 
-![stg5 2](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/899c3d8b-f73e-49b1-a4c4-a8dda3dfdd3d)
+![stg5 2](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/686da3c0-1f6f-45f5-b8d6-b928e9daffa1)
 
 Head to S3: https://s3.console.aws.amazon.com/s3/home
 
