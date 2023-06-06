@@ -113,6 +113,7 @@ Head to *Bucket Policy* and press on **Edit**
 
 Paste in this bucket policy and replace *Bucket-Name* with the name of the corresponding bucket that has the *www* url. 
 Note: *The bucket-policy* file is attached to this repository: https://github.com/Michael-DTran/React-Domain-Proj/blob/6dbb0515bb168820d4e9ca365771f4d0a1dcaed0/bucket-policy
+
 Press on **Save changes** when complete. 
 
 ![stg2 21](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/8227f8b6-768f-4dad-bb3f-592c2d6ff737)
