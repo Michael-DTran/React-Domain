@@ -156,7 +156,8 @@ Press on **Save changes**.
 Head to the *non-www* bucket and press on the **Properties** tab. Scroll down until you see *Static website hosting*. Press on **Edit**.
 
 ![stg2 31](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/0c2c7b07-462c-4a17-86ad-a6c4e2367a01)
-![stg2 32](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/bc8b3f4a-b798-496e-b5be-804c39c5b2ba)
+
+![stg2 32](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/5afb7fd6-d6e5-452c-890b-7b4803a88493)
 
 Change *Static website hosting* to *enable* and *Hosting type* to *Redirect requests for an object*. Under *Host name* enter in the bucket with *www*. 
 Under *Protocol - Optional* change it to *http* for now. When we set up the CF distribution we will change it to https later on in this project. 
