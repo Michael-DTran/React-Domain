@@ -95,7 +95,7 @@ Head to the *www* bucket and press on **Permissions**.
 
 ![stg2 15](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/e56d64b7-eb3c-450e-8ee5-5320eccbd784)
 
-Head to *Block public access (bucket settings) and press on **Edit**.
+Head to *Block public access (bucket settings)* and press on **Edit**.
 
 ![stg2 16](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/881776fd-5bd0-464b-b884-674edc718513)
 
