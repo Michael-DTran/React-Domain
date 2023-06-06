@@ -150,8 +150,7 @@ Change *Static website hosting* to *enable* and *Hosting type* to *Host a static
 
 Press on **Save changes**.
 
-![stg2 30](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/acab0f59-9e96-4f19-bbfb-7a4c624c830b)
-
+![stg2 30](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/13b6175e-b2e3-4224-94ae-06778c4117d2)
 
 Head to the *non-www* bucket and press on the **Properties** tab. Scroll down until you see *Static website hosting*. Press on **Edit**.
 
