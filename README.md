@@ -43,10 +43,58 @@ You should see the index.html, logos, manifest, and robots files
 
 
 If you delve deeper into ```demo-app --> build --> static```
-You should see the css, javascript, and media files. All of these files will be uploaded to S3 to host the website.
+You should see the css, javascript, and media files. All of these files will be uploaded to S3 to host the website. You can now close Powershell as you do not need it anymore.
 
 ![stg1 10](https://github.com/Michael-DTran/React-Domain/assets/112426094/f5cde2b6-13f0-41c2-a016-52a1d383bd0e)
 
 # Stage 2: Create the S3 Bucket
+Head to S3: https://s3.console.aws.amazon.com/s3
+We will create two different buckets for S3. One will be our website without 'www' (*non-www*) and another with 'www' (*www*).
+The *www* website will act as the authority which will host all of our files while the *non-www* is for redirection.
+
+Create the bucket.
+
+Name the bucket corresponding to our website url. Select *US East(N. Virginia) us-east-1* as our **AWS Region**.
+
+Press on **Create Bucket**.
+
+
+Next, create the second bucket that corresponds with the website name. Select *US East(N. Virginia) us-east-1* as our **AWS Region**
+
+Press on **Create Bucket**.
+
+Once those are both created select the *www* and upload the React files to it. 
+
+Select **Upload**. Press on **Add files** and add all the files in the ```Demo-App --> build``` directory. Do not add the ```static``` folder yet.
+Once added select **Add folder** and add the static folder.
+
+All the files and folders should be in the table ready for upload.
+
+Press on **Upload**.
+
+Once the upload succeeds you can press **Close**.
+
+Head to the *www* bucket and press on **Permissions**.
+
+Head to *Block public access (bucket settings) and press on **Edit**.
+
+Uncheck the *Block all public access* setting and press on **Save Changes**.
+
+Enter in *confirm* and press on **Confirm** 
+
+Head to *Bucket Policy* and press on **Edit** 
+
+Paste in this bucket policy and replace *Bucket-Name* with the name of the corresponding bucket. 
+Press on **Save changes** when complete. 
+
+
+
+
+
+
+
+
+
+
 
 
