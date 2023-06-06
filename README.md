@@ -54,61 +54,116 @@ The *www* website will act as the authority which will host all of our files whi
 
 Create the bucket.
 
-Name the bucket corresponding to our website url. Select *US East(N. Virginia) us-east-1* as our **AWS Region**.
+![stg2 1](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/34f290ed-5c40-462d-88fd-8c4e51262333)
 
+Name the bucket corresponding to our website url. Select *US East(N. Virginia) us-east-1* as our **AWS Region**.
 Press on **Create Bucket**.
 
+![stg2 2](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/55a1e01e-3e35-4fdf-aad7-0d8dad9268c9)
+![stg2 3](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/e339f12b-4a85-4fa6-a965-4f78e89e0746)
 
 Next, create the second bucket that corresponds with the website name. Select *US East(N. Virginia) us-east-1* as our **AWS Region**
-
 Press on **Create Bucket**.
+
+![stg2 4](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/071597e5-6c29-4c3d-9671-16f15b16b805)
+![stg2 5](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/e1d417d2-ca92-4eb6-9c05-2c50153eccef)
 
 Once those are both created select the *www* and upload the React files to it. 
 
-Select **Upload**. Press on **Add files** and add all the files in the ```Demo-App --> build``` directory. Do not add the ```static``` folder yet.
+![stg2 6](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/787d1432-779e-433a-934d-f9a7de4239fb)
+
+Select **Upload**. Press on **Add files** and add all the files in the ```Demo-App --> build``` directory. 
+Do not add the ```static``` folder yet.
 Once added select **Add folder** and add the static folder.
+![stg2 7](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/c6d47422-ced6-467b-b290-f12576e10aec)
+![stg2 8](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/4b61d5c9-746a-4c4b-aa95-34e52338d70f)
+![stg2 9](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/849cb24d-6e33-477e-b568-9b83e72ae539)
+
+Once added select **Add folder** and add the static folder.
+![stg2 10](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/f6170303-b67a-4bb5-aa84-8dbc020d8426)
+![stg2 11](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/2888a5c1-19a6-4f89-bfc1-cba9ed85a74d)
 
 All the files and folders should be in the table ready for upload.
-
 Press on **Upload**.
+
+![stg2 13](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/80e933ec-c2d7-40e2-a017-a20a41a0c279)
 
 Once the upload succeeds you can press **Close**.
 
+![stg2 14](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/321c898e-8601-44fb-83a3-d5a897ca2632)
+
 Head to the *www* bucket and press on **Permissions**.
+
+![stg2 15](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/e56d64b7-eb3c-450e-8ee5-5320eccbd784)
 
 Head to *Block public access (bucket settings) and press on **Edit**.
 
+![stg2 16](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/881776fd-5bd0-464b-b884-674edc718513)
+
 Uncheck the *Block all public access* setting and press on **Save Changes**.
+
+![stg2 17](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/3ffc68ca-5a26-44a8-ba88-4297e52ecfae)
 
 Enter in *confirm* and press on **Confirm** 
 
+![stg2 18](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/4298409c-d05c-4729-876c-f1d1fb1e398c)
+
 Head to *Bucket Policy* and press on **Edit** 
+
+![stg2 19](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/7f63b87a-ea58-41dc-b1a3-807601e30f28)
 
 Paste in this bucket policy and replace *Bucket-Name* with the name of the corresponding bucket that has the *www* url. 
 Note: *The bucket-policy* file is attached to this repository. 
 Press on **Save changes** when complete. 
 
-Once completed. your *www* bucket should have an icon saying that it is *public* with your *non-www* reading *bucket and objects not public*
+![stg2 21](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/f505b741-1fc8-43a9-9c36-8823ba84edec)
+
+![stg2 22](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/17fbaad2-bb87-4818-a9c4-81577dd49bfd)
 
 To do a manual check head to the *www* bucket and click on *index.html*
 
+
+![stg2 23](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/1a35ab78-261f-418b-b43a-bc5cf1db889c)
+![stg2 24](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/ddc429df-0ed1-4594-b3e9-d1a3d6ec5731)
+
 Enter in the *Object URL*
+
+![stg2 25](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/52b9ce6d-b600-4432-915a-9c52cdcf1f48)
 
 The page should be blank since you don't have any of the javascript or css files added on to it but the React App should still open in this file. 
 This test is to show that the bucket is in fact public and that you can access the files.
 
+![stg2 26](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/96527be6-22b7-4ff0-8b20-429b27721161)
+
 Head back to the *www* and press on the **Properties** tab. Scroll down until you see *Static website hosting*. Press on **Edit**.
+
+![stg2 27](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/8d379ef8-a0bc-48e7-b3a5-4e53ae8d1d33)
+
+![stg2 28](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/c5b50871-61e3-49a9-9802-042a1172f783)
+
+
 Change *Static website hosting* to *enable* and *Hosting type* to *Host a static website*. For *Index document* type in the *index.html* file.
+
+![stg2 29](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/b3e2c992-687b-4544-9bb7-77253f601483)
+
 Press on **Save changes**.
+
+![stg2 30](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/acab0f59-9e96-4f19-bbfb-7a4c624c830b)
 
 
 Head to the *non-www* bucket and press on the **Properties** tab. Scroll down until you see *Static website hosting*. Press on **Edit**.
+
+![stg2 31](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/0c2c7b07-462c-4a17-86ad-a6c4e2367a01)
+![stg2 32](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/bc8b3f4a-b798-496e-b5be-804c39c5b2ba)
+
 Change *Static website hosting* to *enable* and *Hosting type* to *Redirect requests for an object*. Under *Host name* enter in the bucket with *www*. 
 Under *Protocol - Optional* change it to *http* for now. When we set up the CF distribution we will change it to https later on in this project. 
 Click on **Save changes**.
 
+![stg2 33](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/daf638a3-14de-4702-9f6b-7f40a3d092bc)
 
 
+# Stage 3: Make Route 53 Modifications
 
 
 
