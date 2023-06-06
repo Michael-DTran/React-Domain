@@ -271,6 +271,56 @@ On ```Server``` the distribution should read ```AmazonS3```. We will come back t
 
 ![stg4 12x](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/440e07f7-96f0-4a31-8d94-8d3bb7463924)
 
+# Stage 5: Set up Cloudfront for HTTTPS
+Cloudfront will cache your data to edge locations so users from around the world will always get optimal performance when logging into our website. 
+Head to Cloudfront: https://us-east-1.console.aws.amazon.com/cloudfront
+We will make our **www** Cloudfront distribution first. Click on **Create a Cloudfront distribution**.
+
+When we click on ```Origin domain``` the **www** domain under the dropdown menu is actually the wrong one. The correct one is located in our S3 bucket. 
+Head to S3: https://s3.console.aws.amazon.com/s3/home
+
+Head to the **www** bucket and head to ```Properties```
+
+Scroll down to ```Static website hosting``` and copy the http link to your clipboard. Paste this into the origin domain under the Cloudfront distribution.
+
+Change the ```Viewer``` to ```Redirect HTTP to HTTPS```.
+
+Under ```Alternate domain name (CNAME) -optional``` press on **Add item**
+ 
+Type in the **www** url. Under ```Custom SSL certificate -optional``` click on the dropdown menu and add the ACM certificates which should populate on its own.
+
+Under ```Web Application Firewall (WAF)``` click on ```Enable security protections``` and toggle ```Use monitor mode```.
+Press on **Create Distribution**
+
+The distribution should have successfully completed.
+
+We will now make a distribution for the **non-www**. 
+Head back to S3: https://s3.console.aws.amazon.com/s3/home
+
+Go to ```Buckets``` and click on the **non-www** bucket
+
+Head to ```Properties```. 
+
+Scroll down to Static website hosting and copy the http link to your clipboard.
+
+Head back to Cloudfront: https://us-east-1.console.aws.amazon.com/cloudfront
+
+Click on **Create Distribution**. In ```Origin domain``` paste the link below.
+
+Under ```Alternate domain name (CNAME) -optional``` enter in the **non-www** url.
+
+Under ```Custom SSL certificate -optional``` press on the dropdown menu and the SSL certificate should load in automatically.
+
+Press on **Create Distribution**
+
+You should have two distributions created. If you 
+
+
+
+
+
+
+
 
 
 
