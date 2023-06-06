@@ -84,8 +84,28 @@ Enter in *confirm* and press on **Confirm**
 
 Head to *Bucket Policy* and press on **Edit** 
 
-Paste in this bucket policy and replace *Bucket-Name* with the name of the corresponding bucket. 
+Paste in this bucket policy and replace *Bucket-Name* with the name of the corresponding bucket that has the *www* url. 
+Note: *The bucket-policy* file is attached to this repository. 
 Press on **Save changes** when complete. 
+
+Once completed. your *www* bucket should have an icon saying that it is *public* with your *non-www* reading *bucket and objects not public*
+
+To do a manual check head to the *www* bucket and click on *index.html*
+
+Enter in the *Object URL*
+
+The page should be blank since you don't have any of the javascript or css files added on to it but the React App should still open in this file. 
+This test is to show that the bucket is in fact public and that you can access the files.
+
+Head back to the *www* and press on the **Properties** tab. Scroll down until you see *Static website hosting*. Press on **Edit**.
+Change *Static website hosting* to *enable* and *Hosting type* to *Host a static website*. For *Index document* type in the *index.html* file.
+Press on **Save changes**.
+
+
+Head to the *non-www* bucket and press on the **Properties** tab. Scroll down until you see *Static website hosting*. Press on **Edit**.
+Change *Static website hosting* to *enable* and *Hosting type* to *Redirect requests for an object*. Under *Host name* enter in the bucket with *www*. 
+Under *Protocol - Optional* change it to *http* for now. When we set up the CF distribution we will change it to https later on in this project. 
+Click on **Save changes**.
 
 
 
