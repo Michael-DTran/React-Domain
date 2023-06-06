@@ -313,7 +313,41 @@ Under ```Custom SSL certificate -optional``` press on the dropdown menu and the 
 
 Press on **Create Distribution**
 
-You should have two distributions created. If you 
+You should have two distributions created. If you hover over to the ```Domain name``` and copy the cloudfront.net link you should be able to open the website with https.
+
+If you go to the console on ```F12``` on your keyboard. You can see that the ```Server``` is labeled as ```AmazonS3``` with ```Via``` labled as ```Cloudfront```.
+The website is currently secure but we need to change the Cloudfront distribution to our registered domain names instead.
+
+Go to Route 53: https://us-east-1.console.aws.amazon.com/route53
+Click on **Hosted Zone**.
+
+Click on our **non-www** ```Hosted zone name```.
+
+If you notice on records we have a total of six records now with the addition of the ```CNAME``` records. For now we need edit the ```A``` records. Click on the **www** with the ```A``` record and press on **Edit record**. 
+
+Under ```Route traffic to``` select ```Alias to Cloudfront distribution``` and it should autocomplete with the Cloudfront distribution url. Select the url and press **Save**.
+
+
+Do the same to the **non-www** and leave the ```Record name``` subdomain blank. Select ```Route traffic to``` ```Alias to Cloudfront distribution``` which should autofill for the cloudfront url for the **non-www** url. Select that and press **Save**.
+
+With that complete we can now test our website. Open a new tab and enter in the **www** domain. We can see that the connection is secure. If you dive deeper into the ```F12``` console you can see that  the ```Name``` is linked to the **www** domain and that the server is linked to ```Amazon S3``` ```Via``` ```Cloudfront```
+
+We can also test the **non-www** website and it should work too. The ```Name``` lists to the **non-www** but also lists the **www** url because it directs the website to the **www**. The ```Server``` is also set to ```AmazonS3``` ```Via``` ```Cloudfront```.
+
+# Finished Links
+
+www.awsreact.click
+
+and
+
+awsreact.click
+
+
+
+
+
+
+
 
 
 
