@@ -73,9 +73,6 @@ Once those are both created select the *www* and upload the React files to it.
 ![stg2 6](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/787d1432-779e-433a-934d-f9a7de4239fb)
 
 Select **Upload**. Press on **Add files** and add all the files in the ```Demo-App --> build``` directory. 
-Do not add the ```static``` folder yet.
-
-Once added select **Add folder** and add the static folder.
 
 ![stg2 7](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/c6d47422-ced6-467b-b290-f12576e10aec)
 ![stg2 8](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/4b61d5c9-746a-4c4b-aa95-34e52338d70f)
