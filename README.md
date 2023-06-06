@@ -370,25 +370,43 @@ You should have two distributions created. If you hover over to the ```Domain na
 
 ![stg5 23x](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/09ad88c5-9367-4961-b7a3-eada0af51145)
 
-
 If you go to the console on ```F12``` on your keyboard. You can see that the ```Server``` is labeled as ```AmazonS3``` with ```Via``` labled as ```Cloudfront```.
 The website is currently secure but we need to change the Cloudfront distribution to our registered domain names instead.
+
+![stg5 25](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/a8652a8b-2d54-46f1-8f14-c6a9fa5d581f)
 
 Go to Route 53: https://us-east-1.console.aws.amazon.com/route53
 Click on **Hosted Zone**.
 
+![stg5 26](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/5eebf8b2-f9f7-4bac-9e2b-e929d733aba3)
+
 Click on our **non-www** ```Hosted zone name```.
+
+![stg5 27](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/202c8515-1f83-40a8-8189-07b108c09be3)
 
 If you notice on records we have a total of six records now with the addition of the ```CNAME``` records. For now we need edit the ```A``` records. Click on the **www** with the ```A``` record and press on **Edit record**. 
 
+![stg5 28](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/49d4760f-8633-4865-9075-cd15dca2a183)
+
 Under ```Route traffic to``` select ```Alias to Cloudfront distribution``` and it should autocomplete with the Cloudfront distribution url. Select the url and press **Save**.
 
+![stg5 29](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/4c8b7997-bbac-4e33-9973-e1b003c3e30e)
 
 Do the same to the **non-www** and leave the ```Record name``` subdomain blank. Select ```Route traffic to``` ```Alias to Cloudfront distribution``` which should autofill for the cloudfront url for the **non-www** url. Select that and press **Save**.
 
+![stg5 30](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/c53dcbb0-a62e-4a7a-bc3a-7cbbe5a15eab)
+
 With that complete we can now test our website. Open a new tab and enter in the **www** domain. We can see that the connection is secure. If you dive deeper into the ```F12``` console you can see that  the ```Name``` is linked to the **www** domain and that the server is linked to ```Amazon S3``` ```Via``` ```Cloudfront```
 
+![stg5 33](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/59ac1176-1a32-42fe-aff9-93881fdb5f58)
+
+![stg5 34](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/431b15c7-53eb-4408-8b0d-59e829b59d24)
+
 We can also test the **non-www** website and it should work too. The ```Name``` lists to the **non-www** but also lists the **www** url because it directs the website to the **www**. The ```Server``` is also set to ```AmazonS3``` ```Via``` ```Cloudfront```.
+
+![stg5 32](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/37d71d41-b1af-42df-b684-876de2ed2008)
+
+![stg5 35](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/a9a00aab-9b72-4372-ba10-a8532c134450)
 
 # Finished Links
 
