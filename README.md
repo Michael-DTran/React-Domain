@@ -173,9 +173,9 @@ Press on **Register Domain**
 
 ![stg3 1](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/6326cf29-9885-4dbf-ba12-a5b66bc3f24a)
 
-Under ```Check availability for a domain``` enter in your desired domain name. Press **Select**
+Under ```Check availability for a domain``` enter in your desired domain name. Press **Select**.
 
-![stg3 2](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/d9bbd5d0-8de6-49f2-9bd2-3baf83b08e48)
+![stg3 2](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/2b987d1f-77c6-4a7f-bf42-5202c5d305db)
 
 Follow the prompts for pricing and press **Next**
 
