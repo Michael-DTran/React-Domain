@@ -235,6 +235,49 @@ Set up a new tab and enter in the website. You should be able to enter but have 
 ![stg3 15](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/d0258180-f6ae-454e-8964-61dd15ecf4bb)
 
 # Stage 4: Set Up Certificates with AWS Certificate Manager
+We need to set up certficates to set up our https. 
+Head to ACM: https://us-east-1.console.aws.amazon.com/acm
+Press on **Request a certificate**.
+
+![stg4 1](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/eb2fdea7-3a9d-4a60-8405-f3d7020a0a54)
+
+Under ```Certficate type``` press on ```Request a public certificate```. Press on **Next**.
+
+![stg4 2](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/5fcfd5c8-447f-4868-87e4-abd2b52122bd)
+
+Under ```Fully qualified domain name``` enter in your **www** website url. Press on **Add another name on this certificate**.
+
+![stg4 3](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/363245d1-0a11-4663-8acd-0daabbaf2d52)
+
+Enter in the **non-www** website url. 
+
+![stg4 4](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/f26f97cf-ad98-4d96-8ae8-4c3b9cd1c2f4)
+
+Scroll down to ```DNS validation - recommended``` and select it. Scroll down and press *Request*
+
+![stg4 5](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/ef40991f-be29-4a22-ae52-c057be9f309a)
+
+When the ACM certifcate is complete you should see both entries with a status of ```Success```.
+
+![stg4 9](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/649d5e7b-f219-4166-8040-57112c532865)
+
+Head to Route53: https://us-east-1.console.aws.amazon.com/route53
+Under ```Hosted zones``` and under ```Records``` you should see two ```CNAME``` records. These values should match with the certificates back on ACM under ```CNAME value```.
+
+![stg4 8](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/1ff9a8c7-5109-468f-9884-67960cb4e44e)
+
+If you enter in the website url and press ```F12``` on your keyboard you should open the console. Head to ```Network --> Headers``` click on the **www** url under ```Name```. 
+On ```Server``` the distribution should read ```AmazonS3```. We will come back to this console and observe the changes after we have set up the Cloudfront distribution.
+
+![stg4 12x](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/440e07f7-96f0-4a31-8d94-8d3bb7463924)
+
+
+
+
+
+
+
+
 
 
 
