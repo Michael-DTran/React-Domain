@@ -158,14 +158,89 @@ Head to the **non-www** bucket and press on the ```Properties``` tab. Scroll dow
 
 ![stg2 32](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/5afb7fd6-d6e5-452c-890b-7b4803a88493)
 
-Change ```Static website hosting```to ```enable``` and ```Hosting type``` to ```Redirect requests for an object```. Under ```Host name``` enter in the bucket with **www**. 
-Under ```Protocol - Optional``` change it to ```http``` for now. When we set up the CF distribution we will change it to https later on in this project. 
+Change ```Static website hosting```to ```enable``` and ```Hosting type``` to ```Redirect requests for an object```. Under ```Host name``` enter in the bucket with **www**. If you type in a **non-www** it will not lead you to the **www** website. Under ```Protocol - Optional``` change it to ```http``` for now. When we set up the CF distribution we will change it to https later on in this project. 
 Click on **Save changes**.
 
 ![stg2 33](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/daf638a3-14de-4702-9f6b-7f40a3d092bc)
 
-
 # Stage 3: Make Route 53 Modifications
+
+We will now register the domain.
+
+Head to Route 53: https://us-east-1.console.aws.amazon.com/route53
+
+Press on **Register Domain**
+
+![stg3 1](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/6326cf29-9885-4dbf-ba12-a5b66bc3f24a)
+
+Under ```Check availability for a domain``` enter in your desired domain name. Press **Select**
+
+![stg3 2](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/d9bbd5d0-8de6-49f2-9bd2-3baf83b08e48)
+
+Follow the prompts for pricing and press **Next**
+
+![stg3 3](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/a4ebcad2-bd8f-4d65-829c-72fb5b349b7f)
+
+Enter in your payment information and contact information. Agree to the ```Terms and conditions```. Press **Submit**
+
+![stg3 4](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/964cb61a-1d4d-4299-9051-32b403a311df)
+
+Note: *The domain may take from a few minutes to a few days to register. Message AWS if you have issues getting your domain registered in a reasonable amount of time*
+Once your domain is registered the ```status``` should read ```Domain registration successful```.
+Click on **Hosted Zone*
+
+![stg3 5](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/3d591898-1d7c-474e-9165-a8e74cd5d2ca)
+
+Click on the domain name under ```Hosted zone name```
+
+![stg3 6](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/32b331f0-d393-4050-8525-0d0c1e9a0069)
+
+You should see two records. One with type ```NS``` or ```Name Server``` and one with ```SOA``` or ```State of Authority``` made when we registered the domain. 
+We will be creating two more records. Press on **Create Record**.
+
+![stg3 7](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/10546d3b-7e8b-45b5-929b-4d0550bedab8)
+
+Under ```Choose routing policy``` from the selection wizard, select ```Simple routing``` and press **Next**.
+
+![stg3 8](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/2c3bfb98-925d-4aae-8988-f55407bfd365)
+
+Press on **Define simple record**
+
+![stg3 9](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/800040af-fcc7-4417-bea6-d83da91b95a0)
+
+Enter in **www** for the ```Record name```. ```Record type``` should be ```A - Routes traffic to an IPV4 address and some AWS resources```.
+```Value/Route traffic to``` ```Alias to S3 website endpoint``` in the ```US East (N.Virginia) [us-east-1]``` region and set to ```s3-website-us-east-1.amazonaws.com```.
+Set ```Evaluate target health``` to **No**. Press on **Define simple record**.
+
+![stg3 10](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/719ec078-0726-46b5-abf2-da2d815ae6e0)
+
+Press on **Define simple record** again and repeat this step for the **non-www**.
+
+![stg3 11](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/58af5918-b56b-47f1-898d-498eca662ad9)
+
+All the steps are the same as before except leave the ```Record name``` blank. 
+
+![stg3 10x](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/5c255add-7051-4bfb-8af6-ec565945811e)
+
+Once both records are created press on **Create records**
+
+![stg3 12](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/7440ee5f-7db6-417e-9269-9d5668819901)
+
+You should have four records in total with two new ```A``` records for both the **www** and **non-www**.
+
+![stg3 13](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/856dbe46-5df3-4aa5-8713-801ca976f4f7)
+
+Set up a new tab and enter in the website. You should be able to enter but have a notification on the top saying ```Not secure```. The website isn't secure by Cloudfront for https yet. We will add this in the next following steps.
+
+![stg3 15](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/d0258180-f6ae-454e-8964-61dd15ecf4bb)
+
+# Stage 4: Set Up Certificates with AWS Certificate Manager
+
+
+
+
+
+
 
 
 
