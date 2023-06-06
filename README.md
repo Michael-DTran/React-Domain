@@ -276,44 +276,100 @@ Cloudfront will cache your data to edge locations so users from around the world
 Head to Cloudfront: https://us-east-1.console.aws.amazon.com/cloudfront
 We will make our **www** Cloudfront distribution first. Click on **Create a Cloudfront distribution**.
 
+![stg5 1](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/944a3f2a-117c-4509-ad58-2a12f65c2724)
+
 When we click on ```Origin domain``` the **www** domain under the dropdown menu is actually the wrong one. The correct one is located in our S3 bucket. 
+
+![stg5 2](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/899c3d8b-f73e-49b1-a4c4-a8dda3dfdd3d)
+
 Head to S3: https://s3.console.aws.amazon.com/s3/home
 
-Head to the **www** bucket and head to ```Properties```
+Head to the **www** bucket. 
+
+![stg5 3](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/26bcc914-71d1-4821-a923-09f6ba4a28a4)
+
+Head to ```Properties```
+
+![stg5 4](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/8a567404-1eb3-49ed-96be-676aec9c6a0f)
 
 Scroll down to ```Static website hosting``` and copy the http link to your clipboard. Paste this into the origin domain under the Cloudfront distribution.
 
+![stg5 4x](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/fb09e134-c91a-4c76-9df0-651bab55198e)
+
+Paste the url to the Cloudfront distribution under ```Origin domain```
+
+![stg5 5](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/91038048-4851-4d3e-a1de-776d7a28c933)
+
 Change the ```Viewer``` to ```Redirect HTTP to HTTPS```.
 
-Under ```Alternate domain name (CNAME) -optional``` press on **Add item**
- 
-Type in the **www** url. Under ```Custom SSL certificate -optional``` click on the dropdown menu and add the ACM certificates which should populate on its own.
+![stg5 6x](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/b9cf61fe-8798-46af-a2eb-48b13d315d74)
+
+Under ```Alternate domain name (CNAME) -optional``` press on **Add item**. Type in the **www** url.
+
+![stg5 7](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/2cbfc2fc-bb05-44a9-b17d-5ea23d79d160)
+
+Under ```Custom SSL certificate -optional``` click on the dropdown menu and add the ACM certificates which should populate on its own.
+
+![stg5 8](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/0630a110-bd3b-4f08-916f-c6e7a4af8b7d)
+
+![stg5 10](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/1845814e-7f71-471f-93e6-aefc2e654fd8)
 
 Under ```Web Application Firewall (WAF)``` click on ```Enable security protections``` and toggle ```Use monitor mode```.
 Press on **Create Distribution**
 
-The distribution should have successfully completed.
+![stg5 11](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/cb3846ae-955d-4357-8f52-a8a1b067cc03)
+
+Leave the rest of the settings to default. Press on **Create distribution**.
+
+![stg5 11x](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/726e9fd9-2fcd-4420-9523-8a02367d6117)
+
+![stg5 12](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/69b4d43c-9f50-4910-9847-751e0601b6bb)
 
 We will now make a distribution for the **non-www**. 
 Head back to S3: https://s3.console.aws.amazon.com/s3/home
 
-Go to ```Buckets``` and click on the **non-www** bucket
+Go to ```Buckets``` and click on the **non-www** bucket.
+
+![stg5 13](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/cf9d5c88-7341-4f87-bfac-40dab771e9d0)
 
 Head to ```Properties```. 
 
-Scroll down to Static website hosting and copy the http link to your clipboard.
+![stg5 14](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/c7e50e4b-4ae5-4ba2-b819-1b3a6151562c)
+
+Scroll down to ```Static website hosting``` and copy the http link to your clipboard.
+
+![stg5 15x](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/fb5fdf62-15bb-4515-804e-9d5e9751b8aa)
+
+On the same ```Static website hosting``` press on **Edit** 
+
+![stg5 20y](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/c4de080e-a23d-47fd-8a64-30939937cf13)
+
+Change the ```Protocol - Optional``` to ```https``` for the Cloudfront distribution.
+
+![stg5 22](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/99d4c26b-7dc1-45ba-8162-3efb8d35d0ef)
 
 Head back to Cloudfront: https://us-east-1.console.aws.amazon.com/cloudfront
 
 Click on **Create Distribution**. In ```Origin domain``` paste the link below.
 
+![stg5 15y](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/bdc8678f-753d-4da4-bc3a-bf7562b1d008)
+
 Under ```Alternate domain name (CNAME) -optional``` enter in the **non-www** url.
+
+![stg5 16](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/b5240356-32bb-4ae9-8de1-d0e935d5c950)
 
 Under ```Custom SSL certificate -optional``` press on the dropdown menu and the SSL certificate should load in automatically.
 
+![stg5 17](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/bb5f3b73-2c50-4112-8324-a9380843afb2)
+
 Press on **Create Distribution**
 
+![stg5 11x](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/bff1c9ca-af4c-47c0-913c-cc2e34d38895)
+
 You should have two distributions created. If you hover over to the ```Domain name``` and copy the cloudfront.net link you should be able to open the website with https.
+
+![stg5 23x](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/09ad88c5-9367-4961-b7a3-eada0af51145)
+
 
 If you go to the console on ```F12``` on your keyboard. You can see that the ```Server``` is labeled as ```AmazonS3``` with ```Via``` labled as ```Cloudfront```.
 The website is currently secure but we need to change the Cloudfront distribution to our registered domain names instead.
@@ -337,10 +393,6 @@ We can also test the **non-www** website and it should work too. The ```Name``` 
 # Finished Links
 
 www.awsreact.click
-
-and
-
-awsreact.click
 
 
 
