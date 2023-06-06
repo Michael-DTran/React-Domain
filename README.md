@@ -56,7 +56,7 @@ Create the bucket.
 
 ![stg2 1](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/34f290ed-5c40-462d-88fd-8c4e51262333)
 
-Name the bucket corresponding to our website url. Select *US East(N. Virginia) us-east-1* as our **AWS Region**.
+Name the bucket corresponding to our website url. Select ```*US East(N. Virginia) us-east-1*``` as our **AWS Region**.
 Press on **Create Bucket**.
 
 ![stg2 2](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/55a1e01e-3e35-4fdf-aad7-0d8dad9268c9)
