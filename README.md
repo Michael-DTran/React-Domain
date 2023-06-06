@@ -49,8 +49,8 @@ You should see the css, javascript, and media files. All of these files will be 
 
 # Stage 2: Create the S3 Bucket
 Head to S3: https://s3.console.aws.amazon.com/s3
-We will create two different buckets for S3. One will be our website without 'www' (*non-www*) and another with 'www' (*www*).
-The *www* website will act as the authority which will host all of our files while the *non-www* is for redirection.
+We will create two different buckets for S3. One will be our website without 'www' (**non-www**) and another with 'www' (**www**).
+The **www** website will act as the authority which will host all of our files while the **non-www** is for redirection.
 
 Create the bucket.
 
@@ -68,7 +68,7 @@ Press on **Create Bucket**.
 ![stg2 4](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/071597e5-6c29-4c3d-9671-16f15b16b805)
 ![stg2 5](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/e1d417d2-ca92-4eb6-9c05-2c50153eccef)
 
-Once those are both created select the *www* and upload the React files to it. 
+Once those are both created select the **www** and upload the React files to it. 
 
 ![stg2 6](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/787d1432-779e-433a-934d-f9a7de4239fb)
 
@@ -91,7 +91,7 @@ Once the upload succeeds you can press **Close**.
 
 ![stg2 14](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/321c898e-8601-44fb-83a3-d5a897ca2632)
 
-Head to the *www* bucket and press on **Permissions**.
+Head to the **www** bucket and press on **Permissions**.
 
 ![stg2 15](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/e56d64b7-eb3c-450e-8ee5-5320eccbd784)
 
@@ -111,7 +111,7 @@ Head to ```Bucket Policy``` and press on **Edit**
 
 ![stg2 19](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/7f63b87a-ea58-41dc-b1a3-807601e30f28)
 
-Paste in this bucket policy and replace ```Bucket-Name``` with the name of the corresponding bucket that has the *www* url. 
+Paste in this bucket policy and replace ```Bucket-Name``` with the name of the corresponding bucket that has the **www** url. 
 
 Note: *The bucket-policy* file is attached to this repository: https://github.com/Michael-DTran/React-Domain-Proj/blob/6dbb0515bb168820d4e9ca365771f4d0a1dcaed0/bucket-policy
 
@@ -122,7 +122,7 @@ Note: *Ignore the API Error*
 
 ![stg2 22](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/4b2697fa-2e82-4576-84d9-831577462870)
 
-To do a manual check head to the *www* bucket and click on ```index.html```
+To do a manual check head to the **www** bucket and click on ```index.html```
 
 
 ![stg2 23](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/1a35ab78-261f-418b-b43a-bc5cf1db889c)
@@ -138,7 +138,7 @@ This test is to show that the bucket is in fact public and that you can access t
 
 ![stg2 26](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/96527be6-22b7-4ff0-8b20-429b27721161)
 
-Head back to the *www* and press on the ```Properties``` tab. Scroll down until you see ```Static website hosting```. Press on **Edit**.
+Head back to the **www** and press on the ```Properties``` tab. Scroll down until you see ```Static website hosting```. Press on **Edit**.
 
 ![stg2 27](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/8d379ef8-a0bc-48e7-b3a5-4e53ae8d1d33)
 
@@ -153,7 +153,7 @@ Press on **Save changes**.
 
 ![stg2 30](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/13b6175e-b2e3-4224-94ae-06778c4117d2)
 
-Head to the *non-www* bucket and press on the ```Properties``` tab. Scroll down until you see ```Static website hosting```. Press on **Edit**.
+Head to the **non-www** bucket and press on the ```Properties``` tab. Scroll down until you see ```Static website hosting```. Press on **Edit**.
 
 ![stg2 31](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/0c2c7b07-462c-4a17-86ad-a6c4e2367a01)
 
