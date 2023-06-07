@@ -191,7 +191,7 @@ Click on **Hosted Zone**.
 
 ![stg3 5](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/3d591898-1d7c-474e-9165-a8e74cd5d2ca)
 
-Click on the domain name under ```Hosted zone name```
+Click on the domain name under ```Hosted zone name```.
 
 ![stg3 6](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/32b331f0-d393-4050-8525-0d0c1e9a0069)
 
