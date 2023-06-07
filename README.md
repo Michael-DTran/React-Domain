@@ -185,7 +185,7 @@ Enter in your payment information and contact information. Agree to the ```Terms
 
 ![stg3 4](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/964cb61a-1d4d-4299-9051-32b403a311df)
 
-Note: *The domain may take from a few minutes to a few days to register. Message AWS if you have issues getting your domain registered in a reasonable amount of time*
+Note: *The domain may take from a few minutes to a few days to register. Message AWS if you have issues getting your domain registered in a reasonable amount of time*.
 Once your domain is registered the ```status``` should read ```Domain registration successful```.
 Click on **Hosted Zone*.
 
