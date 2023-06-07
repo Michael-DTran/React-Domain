@@ -296,6 +296,8 @@ Scroll down to ```Static website hosting``` and copy the http link to your clipb
 
 ![stg5 4x](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/fb09e134-c91a-4c76-9df0-651bab55198e)
 
+Head back to Cloudfront: https://us-east-1.console.aws.amazon.com/cloudfront 
+
 Paste the url to the Cloudfront distribution under ```Origin domain```
 
 ![stg5 5](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/91038048-4851-4d3e-a1de-776d7a28c933)
