@@ -35,7 +35,7 @@ press **y** if prompted.
 ![stg1 6](https://github.com/Michael-DTran/React-Domain/assets/112426094/91310a47-46b2-4402-bb5c-ca51b5bad7d2)
 
 All the files will be batched into some static files. Enter in ```demo-app --> build``` 
-You should see the index.html, logos, manifest, and robots files
+You should see the index.html, logos, manifest, and robots files.
 
 ![stg1 7](https://github.com/Michael-DTran/React-Domain/assets/112426094/3ca60703-baba-4a70-8b49-64ed6c4bf3e4)
 ![stg1 8](https://github.com/Michael-DTran/React-Domain/assets/112426094/8ecf1bc9-5b33-44b7-9b9e-a5d0d59fdd4b)
