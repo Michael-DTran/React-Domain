@@ -187,7 +187,7 @@ Enter in your payment information and contact information. Agree to the ```Terms
 
 Note: *The domain may take from a few minutes to a few days to register. Message AWS if you have issues getting your domain registered in a reasonable amount of time*.
 Once your domain is registered the ```status``` should read ```Domain registration successful```.
-Click on **Hosted Zone*.
+Click on **Hosted Zone**.
 
 ![stg3 5](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/3d591898-1d7c-474e-9165-a8e74cd5d2ca)
 
