@@ -181,7 +181,7 @@ Follow the prompts for pricing and press **Next**.
 
 ![stg3 3](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/a4ebcad2-bd8f-4d65-829c-72fb5b349b7f)
 
-Enter in your payment information and contact information. Agree to the ```Terms and conditions```. Press **Submit**
+Enter in your payment information and contact information. Agree to the ```Terms and conditions```. Press **Submit**.
 
 ![stg3 4](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/964cb61a-1d4d-4299-9051-32b403a311df)
 
