@@ -1,5 +1,3 @@
-# React-Domain-Proj
-
 # Overview
 
 ![React-Arc](https://github.com/Michael-DTran/React-Domain/assets/112426094/a783c826-c47c-47f9-ac58-65e8d35e290b)
