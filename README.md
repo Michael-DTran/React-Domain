@@ -271,7 +271,7 @@ On ```Server``` the distribution should read ```AmazonS3```. We will come back t
 
 ![stg4 12x](https://github.com/Michael-DTran/React-Domain-Proj/assets/112426094/440e07f7-96f0-4a31-8d94-8d3bb7463924)
 
-# Stage 5: Set up Cloudfront for HTTTPS
+# Stage 5: Set up Cloudfront for HTTPS
 Cloudfront will cache your data to edge locations so users from around the world will always get optimal performance when logging into our website. 
 Head to Cloudfront: https://us-east-1.console.aws.amazon.com/cloudfront
 We will make our **www** Cloudfront distribution first. Click on **Create a Cloudfront distribution**.
